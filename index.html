@@ -4,7 +4,6 @@
     <head>
 
         <title>Gunter loading Screen</title>
-
         <style>
             .background {
                 background-repeat:no-repeat;
@@ -22,16 +21,27 @@
     <script language="javascript">
 
         var images = [
-            "https://i.imgur.com/sY95vr8.jpg",
-            "https://i.imgur.com/mleMJVl.png",
-            "https://i.imgur.com/fr9TTrP.jpg",
-            "https://i.imgur.com/BWPzZiH.jpg",
-            "https://i.imgur.com/xSKuLb8.jpg",
-            "https://i.imgur.com/ttUabn7.jpg"
+            "https://i.imgur.com/2H4uBOW.jpg",
+            "https://i.imgur.com/Bl3mpgu.jpg",
+            "https://i.imgur.com/Ifx559m.jpg",
+            "https://i.imgur.com/75XjoJF.jpg",
+            "https://i.imgur.com/sDLeXAN.jpg",
+            "https://i.imgur.com/qHjPKDw.jpg"
         ];
 
         document.body.style.backgroundImage = "url('" + images[ Math.floor( Math.random() * images.length ) ] + "')";
 
     </script>
+    <script type="text/javascript">
+        
+      (function() {
+      var volume = 3;
+        $("audio").each(function(){ this.volume = volume/100; });
+      });
+    
+    </script>
+            <audio autoplay controls loop>
+                <source src="https://cdn.discordapp.com/attachments/820941222381355009/965601754752376932/load.ogg" type="audio/ogg">
+            </audio>
 
 </html>
